@@ -1,6 +1,7 @@
 # fluksio local engine data
 .fluksio/
 docs
+AGENTS.md
 
 # downloaded datasets
 data
