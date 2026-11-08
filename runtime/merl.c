@@ -328,9 +328,9 @@ static void *build_worker(void *unused) {
      * the next message arrives, and a client that is sitting still waiting to hear
      * the index is ready would never send one. Anything asking for a suggestion
      * swaps first (`reap_build`), so nothing is answered from the old index after
-     * this. */
-    progress_end();
+     * this. `built` goes first: a client answering `end` at once must find it set. */
     built = 1;
+    progress_end();
     return NULL;
 }
 
