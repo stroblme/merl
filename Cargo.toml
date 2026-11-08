@@ -1,0 +1,15 @@
+[package]
+name = "merl-sys"
+version = "0.1.0"
+edition = "2024"
+description = "merl's C runtime compiled into a Rust program, which runs it as merl-rt"
+repository = "https://github.com/stroblme/merl"
+# merl and jsmn are MIT, libsais is Apache-2.0 (runtime/LICENSE.libsais).
+license = "MIT AND Apache-2.0"
+include = ["build.rs", "src/lib.rs", "runtime/*", "LICENSE"]
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+cc = "1"

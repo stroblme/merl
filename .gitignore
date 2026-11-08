@@ -186,3 +186,6 @@ pyrightconfig.json
 # built runtime and packed weights
 *.bin
 merl-rt
+
+# merl-sys is a library, whose dependents lock what it depends on
+Cargo.lock

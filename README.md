@@ -16,6 +16,9 @@ merl-rt --vault ~/notes                               # LSP server on stdio
 merl-rt --vault ~/notes --suggest "the completion"    # one answer, then exit
 ```
 
+The Rust crate at the root, `merl-sys`, compiles the same runtime into a Rust program, and its `merl_sys::run` does what `merl-rt`'s `main` does.
+That is how accent ships ghost text inside `accent-cli`.
+
 Training and evaluation live in Python (`uv sync --group dev`):
 
 ```sh
