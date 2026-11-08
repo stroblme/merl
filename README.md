@@ -4,7 +4,7 @@ Merl is a tiny ghost-text engine for markdown notes.
 Based on other text in a vault, it proposes the next words of the line you're writing.
 I'm developing it as an inline-completion backend for [accent](https://github.com/stroblme/accent), but because it speaks LSP 3.18, basically any editor with an inline-completion client could use it.
 
-Merl uses an ∞-gram to extract text from other files in the vault within milliseconds of typing.
+Merl uses an ∞-gram (see [credits](#credits)) to extract text from other files in the vault within milliseconds of typing.
 In the next stage, I'm planning to extend Merl with a fine-tuned attention model, [Wren](https://github.com/stroblme/wren), to give more precise suggestions.
 No GPU needed btw.
 
@@ -31,5 +31,4 @@ Datasets download into `data/` on demand (`merl.dataset`).
 - [Infini-gram](https://arxiv.org/abs/2401.17377) by Jiacheng Liu et al. for the ∞-gram idea.
 - [libsais](https://github.com/IlyaGrebnov/libsais) by Ilya Grebnov for suffix arrays (Apache-2.0).
 - [jsmn](https://github.com/zserge/jsmn) by Serge Zaitsev for JSON parsing (MIT).
-- [JAX](https://github.com/jax-ml/jax), [Flax](https://github.com/google/flax), and [Optax](https://github.com/google-deepmind/optax) for training, and fluksio for tracked runs.
 - [WikiText](https://arxiv.org/abs/1609.07843) by Stephen Merity et al. for the base corpus.
