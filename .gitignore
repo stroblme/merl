@@ -1,6 +1,8 @@
 # fluksio local engine data
 .fluksio/
-docs
+/docs/*
+!/docs/merl-logo.svg
+!/docs/social-preview.*
 AGENTS.md
 
 # downloaded datasets
