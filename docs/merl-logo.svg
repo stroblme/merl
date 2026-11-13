@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img">
+  <title>Merl logo mark with a blackbird inside a ring</title>
+  <desc>A round blackbird facing left with an orange bill and eye ring, resting above gently curved ground, its bill tip and tail meeting the enclosing circle, drawn in warm charcoal and cream tones.</desc>
+  <defs>
+    <linearGradient id="ring-gradient" gradientUnits="userSpaceOnUse" x1="0" y1="128" x2="256" y2="128">
+      <stop offset="0" stop-color="#7D736A"/>
+      <stop offset="1" stop-color="#4A433E"/>
+    </linearGradient>
+    <clipPath id="landscape-clip">
+      <circle cx="128" cy="128" r="125"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#landscape-clip)">
+    <path id="ground" d="M 0,224 C 88,207 159,209 256,220 V 256 H 0 Z" fill="#EFE6DA"/>
+    <path id="body" d="M 46,80 C 52,56 86,46 110,58 C 128,68 134,84 142,94 C 162,106 178,128 188,150 L 246,170 L 238,196 L 172,180 C 158,196 132,204 108,200 C 74,194 54,170 52,146 C 50,128 44,116 42,106 Z" fill="#4A433E"/>
+    <path id="wing" d="M 90,136 C 106,108 158,116 182,160 C 146,172 102,168 90,136 Z" fill="#332E2A"/>
+    <path id="sheen" d="M 86,58 C 94,54 104,56 110,62" stroke="#6E655D" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path id="bill" d="M 48,84 L 8,97 L 46,106 Z" fill="#E39A2E"/>
+    <circle id="eye" cx="74" cy="84" r="13" fill="#1E1A17" stroke="#E39A2E" stroke-width="4.5"/>
+    <circle cx="70" cy="79" r="4" fill="#FFFFFF"/>
+    <circle cx="79" cy="90" r="1.6" fill="#FFFFFF"/>
+  </g>
+  <circle cx="128" cy="128" r="124.25" fill="none" stroke="url(#ring-gradient)" stroke-width="7.5"/>
+</svg>
