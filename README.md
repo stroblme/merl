@@ -12,10 +12,7 @@ Based on other text in a vault, it proposes the next words of the line you're wr
 I'm developing it as an inline-completion backend for [accent](https://github.com/stroblme/accent), but because it speaks LSP 3.18, basically any editor with an inline-completion client could use it.
 
 Merl uses an ∞-gram (see [credits](#credits)) to extract text from other files in the vault within milliseconds of typing.
-In the next stage, I'm planning to extend Merl with a fine-tuned attention model, [Wren](https://github.com/stroblme/wren), to give more precise suggestions.
 No GPU needed btw.
-
-The runtime indexes a 67 MB vault in **2.4 s** with **330 MB** of memory on a CPU, so no GPU is needed.
 
 ## Setup
 
